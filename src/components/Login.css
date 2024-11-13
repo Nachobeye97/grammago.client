@@ -52,15 +52,13 @@
   color: #666;
 }
 
-.login-container .register-link,
-.login-container .forgot-password-link {
+.login-container .register-link {
   color: var(--btn-bg-color-light);
   text-decoration: underline;
   cursor: pointer;
 }
 
-.login-container .register-link:hover,
-.login-container .forgot-password-link:hover {
+.login-container .register-link:hover {
   color: var(--btn-bg-color-dark);
 }
 

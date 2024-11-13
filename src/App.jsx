@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
-import ForgotPassword from './components/ForgotPassword';
 import ThemeToggle from './components/ThemeToggle';
 import InfoButton from './components/InfoButton';
 import MainPage from './components/MainPage';
@@ -26,7 +25,6 @@ const AppContent = ({ darkMode, setDarkMode, exerciseResults, setExerciseResults
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login darkMode={darkMode} />} />
         <Route path="/register" element={<Register darkMode={darkMode} />} />
-        <Route path="/forgot-password" element={<ForgotPassword darkMode={darkMode} />} />
         <Route path="/main" element={<MainPage darkMode={darkMode} exerciseResults={exerciseResults} />} />
         <Route path="/personal-data" element={<PersonalData darkMode={darkMode} userId={123} />} />
         <Route path="/exercises" element={<Exercises darkMode={darkMode} setExerciseResults={setExerciseResults} />} />

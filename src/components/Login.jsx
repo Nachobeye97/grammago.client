@@ -70,12 +70,6 @@ const Login = ({ darkMode }) => {
       </form>
 
       <p>
-        <span onClick={() => navigate('/forgot-password')} className="forgot-password-link">
-          ¿Olvidaste tu contraseña?
-        </span>
-      </p>
-
-      <p>
         ¿No tienes cuenta?{' '}
         <span onClick={() => navigate('/register')} className="register-link">
           Regístrate aquí
